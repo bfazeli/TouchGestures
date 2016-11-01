@@ -50,7 +50,9 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onSingleTapConfirmed(MotionEvent motionEvent) {
-
+        singleTaps++;
+        // Let's append to our gesture log:
+        gesturesLogTextView.append("\nonSingleTapConfirmed touch event");
         return false;
     }
 
